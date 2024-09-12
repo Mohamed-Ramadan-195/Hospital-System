@@ -48,6 +48,7 @@ There are some **common operations** between users such as:
  - Kotlin Coroutine
  - Shared Preference Database
  - Material Design & Lottie
+ - Biometric
 
 # How to install this app ?
  Just copy this url ``` https://github.com/Mohamed-Ramadan-195/HospitalSystem.git ``` and clone it in your android studio. 
