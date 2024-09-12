@@ -1,7 +1,7 @@
 # Hospital System 
 Hospital System is an Android application designed using clean architecture with Kotlin. 
 The application allows 6 users to use it, and each user has specific features. 
-This makes it easy for the hospital management to facilitate the tasks of their staff. 
+This makes it easy for the hospital management to facilitate the tasks of their employees. 
 Advanced concepts and topics in Android components have been relied upon in building this application.
 
 # Features 
