@@ -12,7 +12,7 @@ import com.example.hospitalsystem.base.BaseFragment
 import com.example.hospitalsystem.databinding.FragmentNewUserBinding
 import com.example.hospitalsystem.features.hr.domain.models.ModelNewUserRequest
 import com.example.hospitalsystem.features.hr.presentation.viewmodel.NewUserViewModel
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.isEmptyEditText

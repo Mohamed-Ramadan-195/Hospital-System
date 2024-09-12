@@ -16,7 +16,7 @@ import com.example.hospitalsystem.features.receptionist.presentation.adapters.Ad
 import com.example.hospitalsystem.features.receptionist.presentation.viewmodel.CallViewModel
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ENGLISH
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.toast

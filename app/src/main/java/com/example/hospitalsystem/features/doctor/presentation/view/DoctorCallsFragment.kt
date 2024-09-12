@@ -12,7 +12,7 @@ import com.example.hospitalsystem.features.receptionist.domain.models.CallsData
 import com.example.hospitalsystem.features.receptionist.domain.models.ModelCalls
 import com.example.hospitalsystem.utils.ACCEPT
 import com.example.hospitalsystem.utils.EMPTY_STRING
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.REJECT
 import com.example.hospitalsystem.utils.back

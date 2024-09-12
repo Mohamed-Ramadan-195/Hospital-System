@@ -155,6 +155,7 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/cases"
                 android:textColor="@color/white"
+                style="@style/regular"
                 app:layout_constraintStart_toStartOf="@id/casesIcon"
                 app:layout_constraintEnd_toEndOf="@id/casesIcon"
                 app:layout_constraintTop_toBottomOf="@id/casesIcon" />
@@ -196,6 +197,7 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/reports"
                 android:textColor="@color/white"
+                style="@style/regular"
                 app:layout_constraintStart_toStartOf="@id/reportsIcon"
                 app:layout_constraintEnd_toEndOf="@id/reportsIcon"
                 app:layout_constraintTop_toBottomOf="@id/reportsIcon" />
@@ -238,6 +240,7 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/tasks"
                 android:textColor="@color/white"
+                style="@style/regular"
                 app:layout_constraintStart_toStartOf="@id/tasksIcon"
                 app:layout_constraintEnd_toEndOf="@id/tasksIcon"
                 app:layout_constraintTop_toBottomOf="@id/tasksIcon" />
@@ -279,6 +282,7 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/attendance_leaving"
                 android:textColor="@color/white"
+                style="@style/regular"
                 app:layout_constraintStart_toStartOf="@id/attendanceIcon"
                 app:layout_constraintEnd_toEndOf="@id/attendanceIcon"
                 app:layout_constraintTop_toBottomOf="@id/attendanceIcon" />

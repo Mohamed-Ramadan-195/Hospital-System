@@ -8,6 +8,7 @@
     android:background="@color/white"
     tools:context=".features.analysis.presentation.view.AnalysisCaseDetailsFragment" >
 
+    <!-- Guidelines -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3h"
         android:layout_width="wrap_content"
@@ -33,9 +34,8 @@
         android:id="@+id/fragmentAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_14ssp"
         android:text="@string/case_details"
-        android:fontFamily="@font/poppins_regular"
+        style="@style/fragment_address"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline3h" />
@@ -455,11 +455,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_20sdp"
-            android:paddingVertical="@dimen/_11sdp"
             android:text="@string/add_record"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/primary_color"
-            app:cornerRadius="@dimen/_3sdp"
+            style="@style/regular.button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />

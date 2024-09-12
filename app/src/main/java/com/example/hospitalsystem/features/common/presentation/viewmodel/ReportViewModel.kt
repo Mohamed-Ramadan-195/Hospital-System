@@ -8,7 +8,7 @@ import com.example.hospitalsystem.features.common.domain.usecases.ReportAnswerUs
 import com.example.hospitalsystem.features.common.domain.usecases.ReportDetailsUseCase
 import com.example.hospitalsystem.features.common.domain.usecases.ReportEndUseCase
 import com.example.hospitalsystem.features.common.domain.usecases.ReportsUseCase
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

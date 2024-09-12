@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hospitalsystem.features.login.domain.models.ModelLoginRequest
 import com.example.hospitalsystem.features.login.domain.usecase.LoginUseCase
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.SharedPreferenceDatabase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

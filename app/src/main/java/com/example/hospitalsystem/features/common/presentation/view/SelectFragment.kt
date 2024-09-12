@@ -21,7 +21,7 @@ import com.example.hospitalsystem.utils.ENGLISH
 import com.example.hospitalsystem.utils.HR
 import com.example.hospitalsystem.utils.MANGER
 import com.example.hospitalsystem.utils.NURSE
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.RECEPTIONIST
 import com.example.hospitalsystem.utils.SELECTED_DOCTOR_ID

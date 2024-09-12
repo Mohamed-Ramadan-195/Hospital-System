@@ -13,7 +13,7 @@ import com.example.hospitalsystem.utils.DESCRIPTION
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ERROR
 import com.example.hospitalsystem.utils.FAILED
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.TITLE
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.gone

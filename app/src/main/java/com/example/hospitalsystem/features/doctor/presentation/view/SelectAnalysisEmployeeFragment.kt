@@ -16,7 +16,7 @@ import com.example.hospitalsystem.utils.ANALYSIS
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ENGLISH
 import com.example.hospitalsystem.utils.MEDICAL_RECORD
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.ZERO
 import com.example.hospitalsystem.utils.back

@@ -15,7 +15,7 @@ import com.example.hospitalsystem.features.common.presentation.viewmodel.TaskVie
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ENGLISH
 import com.example.hospitalsystem.utils.MANGER
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.SharedPreferenceDatabase
 import com.example.hospitalsystem.utils.back

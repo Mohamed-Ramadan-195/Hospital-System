@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".features.common.presentation.view.cases.CasesFragment">
 
+    <!-- Guidelines -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3h"
         android:layout_width="wrap_content"
@@ -27,13 +28,13 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.97" />
 
+    <!-- Elements -->
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/fragmentAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_14ssp"
         android:text="@string/cases"
-        android:fontFamily="@font/poppins_regular"
+        style="@style/fragment_address"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline3h" />

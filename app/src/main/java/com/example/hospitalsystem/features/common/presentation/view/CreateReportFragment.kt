@@ -6,7 +6,7 @@ import androidx.fragment.app.viewModels
 import com.example.hospitalsystem.base.BaseFragment
 import com.example.hospitalsystem.databinding.FragmentCreateReportBinding
 import com.example.hospitalsystem.features.common.presentation.viewmodel.ReportViewModel
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.isEmptyEditText

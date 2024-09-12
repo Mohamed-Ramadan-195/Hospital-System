@@ -6,7 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.hospitalsystem.features.common.domain.usecases.TaskDetailsUseCase
 import com.example.hospitalsystem.features.common.domain.usecases.TaskExecutionUseCase
 import com.example.hospitalsystem.features.common.domain.usecases.TasksUseCase
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

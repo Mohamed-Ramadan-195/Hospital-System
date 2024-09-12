@@ -11,7 +11,7 @@ import com.example.hospitalsystem.databinding.FragmentMedicalBinding
 import com.example.hospitalsystem.features.doctor.presentation.adapters.AdapterRecyclerMeasurement
 import com.example.hospitalsystem.features.doctor.presentation.viewmodel.RequestViewModel
 import com.example.hospitalsystem.utils.EMPTY_STRING
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.ZERO
 import com.example.hospitalsystem.utils.back

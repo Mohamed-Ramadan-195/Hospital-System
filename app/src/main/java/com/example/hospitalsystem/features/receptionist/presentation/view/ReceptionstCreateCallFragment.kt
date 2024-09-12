@@ -10,7 +10,7 @@ import com.example.hospitalsystem.databinding.FragmentReceptionstCreateCallBindi
 import com.example.hospitalsystem.features.receptionist.domain.models.ModelCreateCallRequest
 import com.example.hospitalsystem.features.receptionist.presentation.viewmodel.CallViewModel
 import com.example.hospitalsystem.utils.DOCTOR
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.SELECTED_DOCTOR_ID
 import com.example.hospitalsystem.utils.SELECTED_DOCTOR_NAME

@@ -17,7 +17,7 @@ import com.example.hospitalsystem.features.common.presentation.viewmodel.ReportV
 import com.example.hospitalsystem.utils.DATE_FORMAT
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ENGLISH
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.hideProgressLoading
 import com.example.hospitalsystem.utils.showProgressLoading

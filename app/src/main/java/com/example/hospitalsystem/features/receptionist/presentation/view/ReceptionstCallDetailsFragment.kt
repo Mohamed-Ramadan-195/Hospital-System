@@ -9,7 +9,7 @@ import com.example.hospitalsystem.databinding.FragmentReceptionstCallDetailsBind
 import com.example.hospitalsystem.features.receptionist.domain.models.ModelCallDetails
 import com.example.hospitalsystem.features.receptionist.presentation.viewmodel.CallViewModel
 import com.example.hospitalsystem.utils.LOGOUT
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.ZERO
 import com.example.hospitalsystem.utils.back

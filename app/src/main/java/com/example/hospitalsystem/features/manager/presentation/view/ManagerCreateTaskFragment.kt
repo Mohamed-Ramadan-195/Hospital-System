@@ -13,7 +13,7 @@ import com.example.hospitalsystem.databinding.FragmentManagerCreateTaskBinding
 import com.example.hospitalsystem.features.manager.presentation.adapter.AdapterRecyclerToDo
 import com.example.hospitalsystem.features.manager.presentation.viewmodel.CreateTaskViewModel
 import com.example.hospitalsystem.utils.EMPLOYEE
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.SELECTED_EMPLOYEE_ID
 import com.example.hospitalsystem.utils.SELECTED_EMPLOYEE_NAME

@@ -8,7 +8,7 @@ import com.example.hospitalsystem.features.receptionist.domain.usecases.CreateCa
 import com.example.hospitalsystem.features.receptionist.domain.usecases.GetCallDetailsUseCase
 import com.example.hospitalsystem.features.receptionist.domain.usecases.GetCallsUseCase
 import com.example.hospitalsystem.features.receptionist.domain.usecases.LogoutCallUseCase
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

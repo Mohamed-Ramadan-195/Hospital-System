@@ -14,7 +14,7 @@ import com.example.hospitalsystem.features.nurse.presentation.viewmodel.AddMeasu
 import com.example.hospitalsystem.features.nurse.presentation.viewmodel.CaseDetailsViewModel
 import com.example.hospitalsystem.utils.CASE
 import com.example.hospitalsystem.utils.MEDICAL_MEASUREMENT
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.ZERO
 import com.example.hospitalsystem.utils.back

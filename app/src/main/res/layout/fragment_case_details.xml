@@ -9,6 +9,7 @@
     android:backgroundTint="@color/white"
     tools:context=".features.common.presentation.view.cases.CaseDetailsFragment" >
 
+    <!-- Guidelines -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3h"
         android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/_14ssp"
         android:text="@string/case_details"
-        android:fontFamily="@font/poppins_regular"
+        style="@style/fragment_address"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline3h" />
@@ -87,9 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/patient_name"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,9 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/name"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/patientNameText"
             app:layout_constraintBottom_toBottomOf="@id/patientNameText" />
@@ -111,9 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/age2"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/patientNameText" />
 
@@ -122,9 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/default_age"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/ageText"
             app:layout_constraintBottom_toBottomOf="@id/ageText" />
@@ -135,9 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/phone_number"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/age" />
 
@@ -146,9 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/default_phone_number"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/phoneNumberText"
             app:layout_constraintBottom_toBottomOf="@id/phoneNumberText" />
@@ -159,9 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/date"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
 
@@ -170,10 +157,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/default_date"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
             android:textDirection="rtl"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/dateText"
             app:layout_constraintBottom_toBottomOf="@id/dateText" />
@@ -184,9 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/doctor"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/date" />
 
@@ -195,10 +178,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/name"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
             android:textDirection="rtl"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/doctorText"
             app:layout_constraintBottom_toBottomOf="@id/doctorText" />
@@ -209,9 +190,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/nurse"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/doctorName" />
 
@@ -220,10 +199,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="@string/name"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
             android:textDirection="rtl"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/nurseText"
             app:layout_constraintBottom_toBottomOf="@id/nurseText" />
@@ -234,9 +211,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/status"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/nurseName" />
 
@@ -255,9 +230,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_8sdp"
             tools:text="@string/process"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             app:layout_constraintTop_toTopOf="@id/statusText"
             app:layout_constraintEnd_toStartOf="@id/statusIcon"
             app:layout_constraintBottom_toBottomOf="@id/statusText" />
@@ -268,9 +241,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/case_description"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:textColor="#989898"
+            style="@style/details.title"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/status" />
 
@@ -280,10 +251,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_8sdp"
             tools:text="@string/default_case_description"
-            android:textSize="@dimen/_12ssp"
-            android:textColor="#2C2C2C"
             android:textDirection="ltr"
-            android:fontFamily="@font/poppins_regular"
+            style="@style/details.body"
             android:paddingEnd="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@id/caseDescriptionText"
             app:layout_constraintStart_toStartOf="@id/caseDescriptionText"

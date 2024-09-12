@@ -102,10 +102,6 @@ object SharedPreferenceDatabase {
         editor.apply()
     }
 
-    fun getId(): Int {
-        return getSharedPreference().getInt(USER_ID_KEY, 0)
-    }
-
     fun setMobile(mobile: String) {
         setPreference(USER_MOBILE_KEY, mobile)
     }

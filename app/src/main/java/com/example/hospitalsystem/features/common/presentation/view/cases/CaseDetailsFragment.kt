@@ -23,7 +23,7 @@ import com.example.hospitalsystem.utils.MANGER
 import com.example.hospitalsystem.utils.MEDICAL_MEASUREMENT
 import com.example.hospitalsystem.utils.MEDICAL_RECORD
 import com.example.hospitalsystem.utils.NURSE
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.SELECTED_NURSE_ID
 import com.example.hospitalsystem.utils.SELECTED_NURSE_NAME

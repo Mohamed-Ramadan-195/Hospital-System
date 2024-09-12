@@ -1,4 +1,4 @@
-package com.example.hospitalsystem.utils
+package com.example.hospitalsystem.di
 
 import retrofit2.HttpException
 import java.io.IOException

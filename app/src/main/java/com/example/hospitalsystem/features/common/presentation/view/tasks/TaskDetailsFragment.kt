@@ -12,7 +12,7 @@ import com.example.hospitalsystem.features.common.presentation.adapter.AdapterRe
 import com.example.hospitalsystem.features.common.presentation.viewmodel.TaskViewModel
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.MANGER
-import com.example.hospitalsystem.utils.NetworkState
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.ProgressLoading
 import com.example.hospitalsystem.utils.SharedPreferenceDatabase
 import com.example.hospitalsystem.utils.ZERO

@@ -15,13 +15,11 @@ import com.example.hospitalsystem.utils.DOCTOR
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.MANGER
 import com.example.hospitalsystem.utils.NURSE
-import com.example.hospitalsystem.utils.NetworkState
-import com.example.hospitalsystem.utils.ProgressLoading
+import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.SharedPreferenceDatabase
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.hideProgressLoading
 import com.example.hospitalsystem.utils.showProgressLoading
-import com.example.hospitalsystem.utils.toast
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
