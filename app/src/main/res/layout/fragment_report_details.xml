@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".features.common.presentation.view.reports.ReportDetailsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline97v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/report_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3h" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="@id/fragmentAddress"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentAddress"
+        app:layout_constraintStart_toStartOf="@id/guideline3v" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/reportName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_minus5sdp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:background="@drawable/custom_shape"
+        tools:text="Report Name"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toStartOf="@id/endReport"
+        app:layout_constraintTop_toTopOf="@id/endReport"
+        app:layout_constraintBottom_toBottomOf="@id/endReport"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/endReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:text="@string/end"
+        android:textColor="@color/white"
+        android:background="@drawable/end_button"
+        app:backgroundTint="@color/red"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/fragmentAddress" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reportDetailsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/reportName" >
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/line"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/employeeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/nurse_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/employeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            tools:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/employeeImage"
+            app:layout_constraintTop_toTopOf="@id/employeeImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_date"
+            android:textColor="@color/grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/specialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specialist_nurse"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/employeeName"
+            app:layout_constraintBottom_toBottomOf="@id/employeeImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/reportDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/default_case_description"
+            app:layout_constraintTop_toBottomOf="@id/employeeImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mangerReplyLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/reportDetailsLayout" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/replyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/replay_manger"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_9ssp"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/baseline_reply_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/replyLine"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/replyText"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/mangerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/nurse_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/replyText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mangerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            tools:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/mangerImage"
+            app:layout_constraintTop_toTopOf="@id/mangerImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dateManger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_date"
+            android:textColor="@color/grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mangerSpecialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specialist_manager"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/mangerName"
+            app:layout_constraintBottom_toBottomOf="@id/mangerImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/reportReplyDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/default_case_description"
+            app:layout_constraintTop_toBottomOf="@id/mangerImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/typeReplyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:hint="@string/type_your_replay"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/grey"
+        android:background="@drawable/custom_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline90h" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_color"
+        app:cornerRadius="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline90h" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

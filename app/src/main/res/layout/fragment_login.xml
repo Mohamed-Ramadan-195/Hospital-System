@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".features.login.presentation.view.LoginFragment" >
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline95v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <!-- Elements -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/topTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/texture_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/app_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline15h" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/welcomeBackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/welcome_back"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginIcon"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loginNowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/to_continue_login_now"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@+id/welcomeBackText"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeBackText"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/outline_email_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline5v"
+        app:layout_constraintTop_toBottomOf="@id/loginNowText"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <View
+        android:id="@+id/emailLine"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:background="@color/primary_color"
+        app:layout_constraintStart_toStartOf="@id/emailEditText"
+        app:layout_constraintTop_toTopOf="@id/emailEditText"
+        app:layout_constraintBottom_toBottomOf="@id/emailEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/outline_lock_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/primary_color"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline5v"
+        app:layout_constraintTop_toBottomOf="@id/emailEditText"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/outline_remove_red_eye_24"
+        app:layout_constraintBottom_toBottomOf="@id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="@id/passwordEditText"
+        app:layout_constraintTop_toTopOf="@id/passwordEditText"
+        tools:ignore="ImageContrastCheck" />
+
+    <View
+        android:id="@+id/passwordLine"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:background="@color/primary_color"
+        app:layout_constraintStart_toStartOf="@id/passwordEditText"
+        app:layout_constraintTop_toTopOf="@id/passwordEditText"
+        app:layout_constraintBottom_toBottomOf="@id/passwordEditText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:text="@string/forgot_password"
+        android:textSize="@dimen/_9ssp"
+        android:fontFamily="@font/poppins_light"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="@string/login"
+        style="@style/regular.button"
+        app:layout_constraintEnd_toEndOf="@id/guideline95v"
+        app:layout_constraintStart_toStartOf="@id/guideline5v"
+        app:layout_constraintTop_toBottomOf="@id/forgotPasswordText"
+        tools:ignore="TextContrastCheck" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bottomTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/texture_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

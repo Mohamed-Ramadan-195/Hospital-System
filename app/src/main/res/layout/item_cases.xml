@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:strokeWidth="0.5dp"
+    app:cardElevation="@dimen/_2sdp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_9sdp" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/nameIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="@string/name"
+            app:layout_constraintTop_toTopOf="@id/nameIcon"
+            app:layout_constraintBottom_toBottomOf="@id/nameIcon"
+            app:layout_constraintStart_toEndOf="@id/nameIcon" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/date_icon_receptionst_call"
+            app:layout_constraintTop_toBottomOf="@id/nameIcon"
+            app:layout_constraintStart_toStartOf="@id/nameIcon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="@string/default_date"
+            app:layout_constraintTop_toTopOf="@id/dateIcon"
+            app:layout_constraintBottom_toBottomOf="@id/dateIcon"
+            app:layout_constraintStart_toEndOf="@id/dateIcon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/showDetailsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_26sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/show_details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateIcon"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/active" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

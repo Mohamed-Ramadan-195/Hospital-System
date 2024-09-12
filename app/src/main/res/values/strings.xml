@@ -1,0 +1,203 @@
+<resources>
+    <!-- app name -->
+    <string name="app_name">Hospital System</string>
+
+    <!-- splash screen -->
+    <string name="loading">Loading …</string>
+    <string name="permission">You do not have permission to log in.</string>
+
+    <!-- login screen -->
+    <string name="welcome_back">Welcome back !</string>
+    <string name="to_continue_login_now">To Continue , Login Now</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+
+    <!-- home screens ( cards - name - specialist ) -->
+    <string name="calls">Calls</string>
+    <string name="tasks">Tasks</string>
+    <string name="cases">Cases</string>
+    <string name="reports">Reports</string>
+    <string name="attendance_leaving">Attendance - Leaving</string>
+    <string name="employee">Employee</string>
+    <string name="mohamed_ramadan">Mohamed Ramadan</string>
+    <string name="specialist_receptionist">Specialist , Receptionist</string>
+    <string name="specialist_hr">Specialist , HR</string>
+    <string name="specialist_doctor">Specialist , Doctor</string>
+    <string name="specialist_nurse">Specialist , Nurse</string>
+
+    <!-- receptionst call details -->
+    <string name="call_details">Call Details</string>
+    <string name="logout">Logout</string>
+    <string name="case_has_been_logged_out">case has been logged out</string>
+    <string name="success_logout">Call Logout Successfully</string>
+
+    <!-- receptionst create call -->
+    <string name="create_call">Create Call</string>
+    <string name="success_create_call">"Created call successfully"</string>
+    <string name="unselected_doctor">Please, Select doctor</string>
+
+    <!-- complete fragment -->
+    <string name="complete_message">The request has been canceled \n successfully</string>
+    <string name="back_to_home">Back to home</string>
+
+    <!-- doctor calls fragment -->
+    <string name="no_accept_no_reject">no accept no reject</string>
+
+    <!-- case details fragment -->
+    <string name="add_nurse">Add Nurse</string>
+    <string name="request">Request</string>
+
+    <!-- create report fragment -->
+    <string name="create_report">Create Report</string>
+
+    <!-- select analysis employee fragment -->
+    <string name="select_analysis_employee">Select Analysis Employee</string>
+    <string name="search_for_analysis_employee">Search for Analysis Employee</string>
+    <string name="unselected_analysis_employee">Please, Select Analysis Employee</string>
+
+    <!-- medical fragment -->
+    <string name="medical_record">Medical record</string>
+    <string name="medical_measurement">Medical measurement</string>
+    <string name="add_measurement">Add Measurement</string>
+    <string name="add_note">Add Note</string>
+    <string name="send">Send</string>
+    <string name="measurement">measurement</string>
+    <string name="review_id">Please, Review your id</string>
+    <string name="empty_measurement">Please, Add measurement</string>
+    <string name="add_medical_record">Add Medical Record</string>
+    <string name="add_record">Add Record</string>
+
+    <!-- attendance fragment -->
+    <string name="attendance">Attendance</string>
+    <string name="_9_00_am">09:00 am</string>
+    <string name="leaving">Leaving</string>
+
+    <!-- select fragment -->
+    <string name="search_for_doctors">Search for doctors</string>
+    <string name="search_for_employee">Search for Employee</string>
+    <string name="select_nurse">Select Nurse</string>
+    <string name="search_for_nurse">Search for Nurse</string>
+
+    <!-- case details fragment -->
+    <string name="unselected_medical">Please, Select one</string>
+    <string name="_120_129">120 – 129</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="sugar_analysis">Sugar Analysis</string>
+
+    <!-- nurse case details -->
+    <string name="years">years</string>
+    <string name="measurement_added_successfully">measurement added successfully</string>
+    <string name="add_value">Add Value</string>
+
+    <!-- new user fragment -->
+    <string name="new_user">New user</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="gender">Gender</string>
+    <string name="specialist">Specialist</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="status">Status</string>
+    <string name="phone_number">Phone number</string>
+    <string name="e_mail">E-mail</string>
+    <string name="address">Address</string>
+    <string name="create_user">Create user</string>
+    <string name="unselected_gender">Please, Select your gender</string>
+    <string name="unselected_specialist">Please, Select your specialist</string>
+    <string name="unselected_date_of_birth">Please, Enter your date of birth</string>
+    <string name="unselected_status">Please, Select your status</string>
+    <string name="not_valid_mail">Please, Write correct email address</string>
+    <string name="maximum_password">Password must contain 8 characters</string>
+    <string name="success_created">User created successfully</string>
+
+    <string-array name="gender">
+        <item> male </item>
+        <item> female </item>
+    </string-array>
+
+    <string-array name="specialist">
+        <item> manager </item>
+        <item> hr </item>
+        <item> receptionist </item>
+        <item> doctor </item>
+        <item> nurse </item>
+        <item> analysis </item>
+    </string-array>
+
+    <string-array name="status">
+        <item> single </item>
+        <item> married </item>
+    </string-array>
+
+    <!-- task details fragment -->
+    <string name="execution">Execution</string>
+    <string name="finish">Finish</string>
+    <string name="mohamed_talat">Mohamed Talat</string>
+
+    <!-- create task fragment -->
+    <string name="success_created_task">Task Created Successfully</string>
+    <string name="unselected_employee">Please, select employee</string>
+    <string name="no_tasks">Please, add any tasks</string>
+    <string name="task_name">Task Name</string>
+    <string name="task_details">Task Details</string>
+    <string name="description">Description</string>
+
+    <!-- attendance fragment -->
+    <string name="touch_id_message">Please touch ID sensor to verify registration</string>
+    <string name="success_attendance">Your attendance has been registered</string>
+
+    // profile fragment
+    <string name="my_profile">My Profile</string>
+    <string name="name">Ebrahem Elzainy</string>
+    <string name="specialist_doctor_profile">Specialist - Doctor</string>
+    <string name="male">Male</string>
+    <string name="_29_03_1997">29–03–1997</string>
+    <string name="mansoura_shirben">Mansoura , Shirben</string>
+    <string name="single">Single</string>
+    <string name="ebrahemelzainy_gmail_com">ebrahemelzainy@gmail.com</string>
+    <string name="_096521145523">096521145523</string>
+    <string name="doctor">Doctor</string>
+    <string name="default_date">2024 – 5 – 19</string>
+
+    <string name="patient_name">Patient Name</string>
+    <string name="age">age</string>
+    <string name="select_doctor">Select Doctor</string>
+    <string name="case_description">Case Description</string>
+    <string name="send_call">Send Call</string>
+    <string name="case_details">Case Details</string>
+    <string name="age2">Age</string>
+    <string name="default_age">24 years</string>
+    <string name="default_phone_number">254110241423</string>
+    <string name="date">Date</string>
+    <string name="process">Process</string>
+    <string name="default_case_description">Details note : Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s</string>
+    <string name="item">item</string>
+    <string name="required">Required</string>
+    <string name="select_date">Select date</string>
+    <string name="accept">Accept</string>
+    <string name="busy">Busy</string>
+    <string name="end_case">End Case</string>
+    <string name="nurse">Nurse</string>
+    <string name="show_details">Show Details</string>
+    <string name="specialist_analysis_employee">Specialist - Analysis Employee</string>
+    <string name="you_have_request">You have request</string>
+    <string name="default_request_body">You have a new request from the doctor, please follow up and implement the request as soon as possible</string>
+    <string name="call_doctor">Call Doctor</string>
+    <string name="specialist_manager">Specialist , Manager</string>
+    <string name="finished">Finished</string>
+    <string name="select_employee">Select Employee</string>
+    <string name="to_do">To do</string>
+    <string name="add">Add</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of">Lorem Ipsum is simply dummy text of</string>
+    <string name="to_do_details">To Do Details</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="report_name">Report Name</string>
+    <string name="report_details">Report Details</string>
+    <string name="end">End</string>
+    <string name="replay_manger">Replay - Manger</string>
+    <string name="type_your_replay">Type Your Replay</string>
+    <string name="success_add_record">Record added successfully</string>
+    <string name="report_answered_successfully">Report Answered Successfully</string>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".features.common.presentation.view.tasks.TasksFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline97h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline97v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/tasks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3h" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="@id/fragmentAddress"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentAddress"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addButtonRectangle"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintTop_toTopOf="@id/datePickerIcon"
+        app:layout_constraintBottom_toBottomOf="@id/datePickerIcon"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:background="@drawable/baseline_add_24"
+        app:layout_constraintStart_toStartOf="@id/addButtonRectangle"
+        app:layout_constraintEnd_toEndOf="@id/addButtonRectangle"
+        app:layout_constraintTop_toTopOf="@id/addButtonRectangle"
+        app:layout_constraintBottom_toBottomOf="@id/addButtonRectangle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/dateText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_minus5sdp"
+        android:background="@drawable/custom_search_bar"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_6sdp"
+        android:hint="@string/select_date"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toStartOf="@id/datePickerIcon"
+        app:layout_constraintTop_toTopOf="@id/datePickerIcon"
+        app:layout_constraintBottom_toBottomOf="@id/datePickerIcon"
+        tools:ignore="RtlSymmetry" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/datePickerIcon"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/date_picker_icon"
+        app:layout_constraintTop_toBottomOf="@id/fragmentAddress"
+        app:layout_constraintEnd_toStartOf="@id/addButtonRectangle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_task_layout"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/datePickerIcon"
+        app:layout_constraintBottom_toBottomOf="@id/guideline97h" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

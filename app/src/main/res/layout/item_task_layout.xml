@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_6sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:strokeWidth="0.5dp"
+    app:cardElevation="@dimen/_2sdp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_9sdp" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/taskIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_tasks"
+            android:background="@color/primary_color"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="@string/task_name"
+            app:layout_constraintTop_toTopOf="@id/taskIcon"
+            app:layout_constraintBottom_toBottomOf="@id/taskIcon"
+            app:layout_constraintStart_toEndOf="@id/taskIcon" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/date_icon_receptionst_call"
+            app:layout_constraintTop_toBottomOf="@id/taskIcon"
+            app:layout_constraintStart_toStartOf="@id/taskIcon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="@string/default_date"
+            app:layout_constraintTop_toTopOf="@id/dateIcon"
+            app:layout_constraintBottom_toBottomOf="@id/dateIcon"
+            app:layout_constraintStart_toEndOf="@id/dateIcon" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="@string/finished"
+            android:textColor="@color/primary_color"
+            android:background="@drawable/glow_green"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/taskName"
+            app:layout_constraintBottom_toBottomOf="@id/taskName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

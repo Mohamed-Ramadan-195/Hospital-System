@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".features.common.presentation.view.cases.CaseDetailsFragment" >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline97v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <!-- Elements -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14ssp"
+        android:text="@string/case_details"
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3h" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="@id/fragmentAddress"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentAddress"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_employee_position"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/fragmentAddress" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/caseLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/itemsRecyclerView"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v" >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/patientNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_name"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/patientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/name"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/patientNameText"
+            app:layout_constraintBottom_toBottomOf="@id/patientNameText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/ageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/age2"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patientNameText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_age"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ageText"
+            app:layout_constraintBottom_toBottomOf="@id/ageText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/phoneNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/phone_number"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_phone_number"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/phoneNumberText"
+            app:layout_constraintBottom_toBottomOf="@id/phoneNumberText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/date"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumber" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/default_date"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:textDirection="rtl"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/dateText"
+            app:layout_constraintBottom_toBottomOf="@id/dateText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/doctorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/doctor"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/name"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:textDirection="rtl"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/doctorText"
+            app:layout_constraintBottom_toBottomOf="@id/doctorText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nurseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/nurse"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/doctorName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nurseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/name"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:textDirection="rtl"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/nurseText"
+            app:layout_constraintBottom_toBottomOf="@id/nurseText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/status"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nurseName" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/process_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/statusText"
+            app:layout_constraintBottom_toBottomOf="@id/statusText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            tools:text="@string/process"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintTop_toTopOf="@id/statusText"
+            app:layout_constraintEnd_toStartOf="@id/statusIcon"
+            app:layout_constraintBottom_toBottomOf="@id/statusText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/caseDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="@string/case_description"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="#989898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/caseDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            tools:text="@string/default_case_description"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#2C2C2C"
+            android:textDirection="ltr"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingEnd="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/caseDescriptionText"
+            app:layout_constraintStart_toStartOf="@id/caseDescriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/caseDescription" >
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/addNurseButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:text="@string/add_nurse"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/round_add_24"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/primary_color" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/requestButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/request"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/round_add_24"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/primary_color" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/medicalMeasurementLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/itemsRecyclerView" >
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/line"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/nurseImageMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/nurse_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nurseNameMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            tools:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/nurseImageMeasurement"
+            app:layout_constraintTop_toTopOf="@id/nurseImageMeasurement" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nurseSpecialistMeasurement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specialist_nurse"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/nurseNameMeasurement"
+            app:layout_constraintBottom_toBottomOf="@id/nurseImageMeasurement" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/noteMeasurement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/default_case_description"
+            app:layout_constraintTop_toBottomOf="@id/nurseImageMeasurement" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/medicalMeasurementText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/medical_measurement"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noteMeasurement" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circleBlood"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/circle"
+            app:layout_constraintStart_toStartOf="@id/medicalMeasurementText"
+            app:layout_constraintTop_toBottomOf="@id/medicalMeasurementText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bloodPressureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/circleBlood"
+            app:layout_constraintTop_toTopOf="@id/circleBlood"
+            app:layout_constraintBottom_toBottomOf="@id/circleBlood" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bloodPressureValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_120_129"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bloodPressureText"
+            app:layout_constraintBottom_toBottomOf="@id/bloodPressureText" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circleSugar"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/circle"
+            app:layout_constraintStart_toStartOf="@id/medicalMeasurementText"
+            app:layout_constraintTop_toBottomOf="@id/bloodPressureText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sugarAnalysisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sugar_analysis"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/circleSugar"
+            app:layout_constraintTop_toTopOf="@id/circleSugar"
+            app:layout_constraintBottom_toBottomOf="@id/circleSugar" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sugarAnalysisValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_120_129"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/sugarAnalysisText"
+            app:layout_constraintBottom_toBottomOf="@id/sugarAnalysisText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/medicalRecordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/itemsRecyclerView" >
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/lineRecord"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/analysisImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:src="@drawable/nurse_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/analysisName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            tools:text="@string/name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/analysisImage"
+            app:layout_constraintTop_toTopOf="@id/analysisImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/analysisSpecialist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/specialist_analysis_employee"
+            android:textColor="@color/primary_color"
+            app:layout_constraintStart_toStartOf="@id/analysisName"
+            app:layout_constraintBottom_toBottomOf="@id/analysisImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/noteRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@string/default_case_description"
+            app:layout_constraintTop_toBottomOf="@id/analysisImage" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/medicalRecordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/medical_record"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11ssp"
+            android:fontFamily="@font/poppins_semi_bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noteRecord" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circleBloodRecord"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/circle"
+            app:layout_constraintStart_toStartOf="@id/medicalRecordText"
+            app:layout_constraintTop_toBottomOf="@id/medicalRecordText" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bloodPressureTextRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/circleBloodRecord"
+            app:layout_constraintTop_toTopOf="@id/circleBloodRecord"
+            app:layout_constraintBottom_toBottomOf="@id/circleBloodRecord" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/circleSugarRecord"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:srcCompat="@drawable/circle"
+            app:layout_constraintStart_toStartOf="@id/medicalRecordText"
+            app:layout_constraintTop_toBottomOf="@id/bloodPressureTextRecord" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/sugarAnalysisTextRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sugar_analysis"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintStart_toEndOf="@id/circleSugarRecord"
+            app:layout_constraintTop_toTopOf="@id/circleSugarRecord"
+            app:layout_constraintBottom_toBottomOf="@id/circleSugarRecord" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/endCaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_11sdp"
+        android:text="@string/end_case"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        app:cornerRadius="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline90h" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".features.doctor.presentation.view.MedicalFragment">
+
+    <!-- Guidelines -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline90h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline97v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <!-- Elements -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmentAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/medical_record"
+        style="@style/fragment_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline3h" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_close_24"
+        app:layout_constraintTop_toTopOf="@id/fragmentAddress"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentAddress"
+        app:layout_constraintStart_toStartOf="@id/guideline3v" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/measuremntRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        tools:listitem="@layout/item_employee_position"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/fragmentAddress" />
+
+    <EditText
+        android:id="@+id/addMeasurementEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_36sdp"
+        android:hint="@string/add_measurement"
+        android:background="@drawable/custom_edit_text"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintTop_toBottomOf="@id/measuremntRecyclerView"
+        tools:ignore="RtlSymmetry"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/round_add_grey"
+        app:layout_constraintEnd_toEndOf="@id/addMeasurementEditText"
+        app:layout_constraintTop_toTopOf="@id/addMeasurementEditText"
+        app:layout_constraintBottom_toBottomOf="@id/addMeasurementEditText" />
+
+    <EditText
+        android:id="@+id/addNoteEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:hint="@string/add_note"
+        android:textSize="@dimen/_12ssp"
+        android:background="@drawable/custom_shape"
+        android:padding="@dimen/_12sdp"
+        android:gravity="top"
+        app:layout_constraintStart_toStartOf="@id/guideline3v"
+        app:layout_constraintEnd_toEndOf="@id/guideline97v"
+        app:layout_constraintTop_toBottomOf="@id/addMeasurementEditText"
+        app:layout_constraintHeight_percent="0.18"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primary_color"
+        app:cornerRadius="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline90h" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

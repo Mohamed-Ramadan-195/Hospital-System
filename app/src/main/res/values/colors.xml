@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_color">#22C7B8</color>
+    <color name="grey">#828282</color>
+    <color name="grey_stroke">#E0E0E0</color>
+    <color name="grey_button">#D6D6D6</color>
+    <color name="grey_details">#989898</color>
+    <color name="black_details">#2C2C2C</color>
+    <color name="profile_background">#17b7a8</color>
+    <color name="lemon">#36F38E</color>
+    <color name="active">#19D571</color>
+    <color name="un_active">#EE8105</color>
+    <color name="red">#E63A3A</color>
+    <color name="orange">#F36D13</color>
+
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bottomSheet"
+    app:cardCornerRadius="@dimen/_20sdp"
+    app:cardBackgroundColor="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white" >
+
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:id="@+id/bottomSheetDrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_5sdp" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:weightSum="2"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/medicalRecordButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:paddingVertical="@dimen/_42sdp"
+                android:drawableTop="@drawable/icon_medical_record"
+                android:drawableTint="@drawable/custom_radio_text"
+                android:drawablePadding="@dimen/_8sdp"
+                android:text="@string/medical_record"
+                android:textColor="@drawable/custom_radio_text"
+                android:background="@drawable/custom_radio_selector" />
+
+            <RadioButton
+                android:id="@+id/medicalMeasurementButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:button="@android:color/transparent"
+                android:paddingVertical="@dimen/_42sdp"
+                android:drawableTint="@drawable/custom_radio_text"
+                android:drawableTop="@drawable/icon_medical_measuremnt"
+                android:drawablePadding="@dimen/_8sdp"
+                android:text="@string/medical_measurement"
+                android:textColor="@drawable/custom_radio_text"
+                android:background="@drawable/custom_radio_selector" />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/requestButtonSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:text="@string/request"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/white"
+            app:cornerRadius="@dimen/_6sdp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
