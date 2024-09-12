@@ -7,6 +7,8 @@ Advanced concepts and topics in Android components have been relied upon in buil
 # Features 
 * using it for this
   - Clean Architecture : Clean Architecture ensures that changes to one part of the system do not ripple through the entire codebase, making maintenance more efficient and reducing the risk of unintended side effects.
+     * 3 Layers : Data, Domain and Presentation
+     * Usecases & Repositories
   - Navigation Component : the interactions that let users navigate across, into, and back out from the different screens of content within app.
   - MVVM : improve the performance of the application by caching data in the ViewModel.
            makes it easier to test the UI and the data separately.
