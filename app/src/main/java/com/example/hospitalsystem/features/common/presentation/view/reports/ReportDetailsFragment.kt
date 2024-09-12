@@ -79,6 +79,7 @@ class ReportDetailsFragment : BaseFragment<FragmentReportDetailsBinding>() {
                         // for manger replay layout
                         mangerName.text = cursor.manger.firstName + " " + cursor.manger.lastName
                         dateManger.text = cursor.manger.updatedAt
+                        reportReplyDescription.text = cursor.answer
                     }
                 }
                 else -> {
@@ -124,7 +125,8 @@ class ReportDetailsFragment : BaseFragment<FragmentReportDetailsBinding>() {
     private fun initView() {
         binding.apply {
             if (SharedPreferenceDatabase.getType() == MANGER) {
-                reportDetailsLayout.gone()
+                mangerReplyLayout.gone()
+                reportDetailsLayout.visible()
                 typeReplyEditText.visible()
                 sendButton.visible()
             }
@@ -132,6 +134,7 @@ class ReportDetailsFragment : BaseFragment<FragmentReportDetailsBinding>() {
                 typeReplyEditText.gone()
                 sendButton.gone()
                 reportDetailsLayout.visible()
+                mangerReplyLayout.visible()
             }
         }
     }

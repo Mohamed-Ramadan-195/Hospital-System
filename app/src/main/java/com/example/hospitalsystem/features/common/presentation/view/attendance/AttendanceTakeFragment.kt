@@ -13,16 +13,15 @@ import com.example.hospitalsystem.utils.DESCRIPTION
 import com.example.hospitalsystem.utils.EMPTY_STRING
 import com.example.hospitalsystem.utils.ERROR
 import com.example.hospitalsystem.utils.FAILED
-import com.example.hospitalsystem.di.NetworkState
 import com.example.hospitalsystem.utils.TITLE
 import com.example.hospitalsystem.utils.back
 import com.example.hospitalsystem.utils.gone
-import com.example.hospitalsystem.utils.hideProgressLoading
-import com.example.hospitalsystem.utils.showProgressLoading
 import com.example.hospitalsystem.utils.toast
 import com.example.hospitalsystem.utils.visible
+import dagger.hilt.android.AndroidEntryPoint
 import java.util.concurrent.Executor
 
+@AndroidEntryPoint
 class AttendanceTakeFragment: BaseFragment<FragmentAttendanceTakeBinding>() {
 
     private lateinit var executor: Executor
@@ -57,20 +56,7 @@ class AttendanceTakeFragment: BaseFragment<FragmentAttendanceTakeBinding>() {
 
     override fun observers() {
         attendanceViewModel.takeAttendanceLiveData.observe(viewLifecycleOwner) {
-            when (it.status) {
-                NetworkState.Status.RUNNING -> {
-                    showProgressLoading()
-                }
 
-                NetworkState.Status.SUCCESS -> {
-                    hideProgressLoading(EMPTY_STRING)
-                    back()
-                }
-
-                else -> {
-                    hideProgressLoading(it.message)
-                }
-            }
         }
     }
 

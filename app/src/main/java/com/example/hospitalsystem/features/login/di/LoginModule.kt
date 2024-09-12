@@ -1,8 +1,8 @@
 package com.example.hospitalsystem.features.login.di
 
-import com.example.hospitalsystem.features.login.data.datasource.remote.LoginApiCalls
-import com.example.hospitalsystem.features.login.data.datasource.remote.LoginRemoteDataSource
-import com.example.hospitalsystem.features.login.data.datasource.remote.LoginRemoteDataSourceInterface
+import com.example.hospitalsystem.features.login.data.datasource.LoginApiCalls
+import com.example.hospitalsystem.features.login.data.datasource.LoginRemoteDataSource
+import com.example.hospitalsystem.features.login.data.datasource.LoginRemoteDataSourceInterface
 import com.example.hospitalsystem.features.login.data.repository.LoginRepository
 import com.example.hospitalsystem.features.login.domain.repository.LoginRepositoryInterface
 import dagger.Module

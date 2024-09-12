@@ -119,7 +119,4 @@ dependencies {
 
     // biometric
     implementation(libs.androidx.biometric.ktx)
-
-    // Image picker
-    implementation(libs.imagepicker)
 }

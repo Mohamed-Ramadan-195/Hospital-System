@@ -4,7 +4,7 @@ import com.example.hospitalsystem.features.analysis.data.datasource.AnalysisApiC
 import com.example.hospitalsystem.features.common.data.datasource.CommonApiCalls
 import com.example.hospitalsystem.features.doctor.data.datasource.DoctorApiCalls
 import com.example.hospitalsystem.features.hr.data.datasource.HrApiCalls
-import com.example.hospitalsystem.features.login.data.datasource.remote.LoginApiCalls
+import com.example.hospitalsystem.features.login.data.datasource.LoginApiCalls
 import com.example.hospitalsystem.features.manager.data.datasource.ManagerApiCalls
 import com.example.hospitalsystem.features.nurse.data.datasource.NurseApiCalls
 import com.example.hospitalsystem.features.receptionist.data.datasource.ReceptionstApiCalls

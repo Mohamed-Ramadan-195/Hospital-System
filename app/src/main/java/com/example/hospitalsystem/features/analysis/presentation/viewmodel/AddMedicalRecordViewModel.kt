@@ -29,14 +29,14 @@ class AddMedicalRecordViewModel @Inject constructor(
         _addMedicalRecordLiveData.postValue(NetworkState.LOADING)
         viewModelScope.launch(Dispatchers.IO) {
             try {
-                val data = addMedicalRecordUseCase.addMedicalRecord(caseId, image, note, status)
-                _addMedicalRecordLiveData.postValue (
-                    if (data.status == 1) {
-                        NetworkState.getLoaded(data)
-                    } else {
-                        NetworkState.getErrorMessage(data.message)
-                    }
-                )
+//                val data = addMedicalRecordUseCase.addMedicalRecord(caseId, image, note, status)
+//                _addMedicalRecordLiveData.postValue (
+//                    if (data.status == 1) {
+//                        NetworkState.getLoaded(data)
+//                    } else {
+//                        NetworkState.getErrorMessage(data.message)
+//                    }
+//                )
             } catch (exception: Exception) {
                 exception.printStackTrace()
                 _addMedicalRecordLiveData.postValue(NetworkState.getErrorMessage(exception))

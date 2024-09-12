@@ -54,7 +54,7 @@ interface CommonApiCalls {
     suspend fun endReport(@Path("id") id: Int): ModelSuccess
 
     @FormUrlEncoded
-    @POST("reports/{id}")
+    @PUT("reports/{id}")
     suspend fun answerReport(
         @Path ("id") id: Int,
         @Field ("answer") answer: String

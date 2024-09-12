@@ -1,8 +1,8 @@
 package com.example.hospitalsystem.features.analysis.data.datasource
 
-import com.example.hospitalsystem.features.common.domain.models.ModelSuccess
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.ResponseBody
 
 interface AnalysisRemoteDataSourceInterface {
 
@@ -11,6 +11,6 @@ interface AnalysisRemoteDataSourceInterface {
         image: MultipartBody.Part,
         note: RequestBody,
         status: RequestBody
-    ): ModelSuccess
+    ): ResponseBody
 
 }

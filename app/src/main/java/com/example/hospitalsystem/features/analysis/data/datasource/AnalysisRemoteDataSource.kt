@@ -1,8 +1,8 @@
 package com.example.hospitalsystem.features.analysis.data.datasource
 
-import com.example.hospitalsystem.features.common.domain.models.ModelSuccess
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import okhttp3.ResponseBody
 import javax.inject.Inject
 
 class AnalysisRemoteDataSource @Inject constructor(
@@ -14,7 +14,7 @@ class AnalysisRemoteDataSource @Inject constructor(
         image: MultipartBody.Part,
         note: RequestBody,
         status: RequestBody
-    ): ModelSuccess {
+    ): ResponseBody {
         return analysisApiCalls.addMedicalRecord(
             caseId, image, note, status
         )
